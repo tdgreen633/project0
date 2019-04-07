@@ -1,5 +1,9 @@
 $grid-columns:      12;
 $grid-gutter-width: 30px;
+$highlight: #FFFF99;
+$green-yellow:  greenyellow; 
+$table-border-color: #c8c8c8;
+$grid-border-color: #bebebe;
 
 $grid-breakpoints: (
   // Extra small screen / phone
@@ -21,8 +25,31 @@ $container-max-widths: (
   xl: 1140px
 );
 
+.highlight {
+  background-color: $highlight;
+}
+
 h1 {
-    color: greenyellow;
+    color: $green-yellow;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 1em;
+}
+
+table {
+  #pay-table {
+    border-collapse: collapse;
+    border: 2px solid $table-border-color;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+  }
+
+  td,th {
+    border: 1px solid $grid-border-color;
+    padding: 10px 20px;
+  }
+
+  td {
+    text-align: center;
+  }
 }
